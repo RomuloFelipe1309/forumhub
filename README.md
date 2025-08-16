@@ -100,34 +100,45 @@ Authorization: Bearer <jwt_token>
 
 Usuários
 
-Método 	Rota	Descrição
-POST	/users	Cadastro de usuário
+Método     Rota	            Descrição
+POST	   /users	        Cadastro de usuário
 
 Tópicos
-Método	Rota	Descrição
-POST	/topics	Criar novo tópico
-GET	/topics	Listar todos os tópicos
-GET	/topics/{id}	Buscar tópico por ID
-PUT	/topics/{id}	Atualizar tópico
-DELETE	/topics/{id}	Deletar tópico
+
+Método	        Rota	             Descrição
+POST	        /topics	           Criar novo tópico
+GET	         /topics	Listar     todos os tópicos
+GET	         /topics/{id}	       Buscar tópico por ID
+PUT	         /topics/{id}	      Atualizar tópico
+DELETE	    /topics/{id}	      Deletar tópico
+
 Respostas
-Método	Rota	Descrição
-POST	/topics/{id}/answers	Criar resposta para tópico
-GET	/topics/{id}/answers	Listar respostas do tópico
+
+Método	         Rota	                    Descrição
+POST	     /topics/{id}/answers	   Criar resposta para tópico
+GET	      /topics/{id}/answers	    Listar respostas do tópico
+
 Categorias
-Método	Rota	Descrição
-POST	/categories	Criar nova categoria
-GET	/categories	Listar todas as categorias
+
+Método	       Rota	                     Descrição
+POST	      /categories	             Criar nova categoria
+GET	       /categories	             Listar todas as categorias
+
 Likes
-Método	Rota	Descrição
-POST	/answers/{id}/likes	Curtir resposta
-GET	/answers/{id}/likes/count	Contar likes da resposta
+
+Método	              Rota	                          Descrição
+POST	    /answers/{id}/likes	                    Curtir resposta
+GET	     /answers/{id}/likes/count	Contar        likes da resposta
+
 Notificações
-Método	Rota	Descrição
-GET	/notifications	Listar notificações do usuário
+
+Método	          Rota	                 Descrição
+GET	         /notifications	       Listar notificações do usuário
+
 Estatísticas
-Método	Rota	Descrição
-GET	/stats	Retorna estatísticas gerais
+
+Método	         Rota	                          Descrição
+GET	            /stats	                 Retorna estatísticas gerais
 
 ---
 
@@ -137,6 +148,7 @@ Execute os testes com:
 bash
 
 mvn test
+
 Inclui testes unitários e de integração com banco H2.
 
 ---
